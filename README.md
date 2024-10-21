@@ -1,2 +1,2 @@
 # voice-com
-Voice Commander
+Voice Commander using Open AI Whisper(base.en)
