@@ -22,7 +22,7 @@ pipe = pipeline(
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
 ###################### End Load Models ###########################
-audio_file_path = "output.wav"
+audio_file_path = "input.wav"
 
 channels = 1
 rate = 44100

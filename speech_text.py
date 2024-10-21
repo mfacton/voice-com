@@ -17,8 +17,8 @@ pipe = pipeline(
     device="cuda",
     model_kwargs={"attn_implementation": "sdpa"},
 )
-###################### End Load Models ###########################
-audio_file_path = "output.wav"
+
+audio_file_path = "input.wav"
 
 channels = 1
 rate = 44100
@@ -63,7 +63,7 @@ with wave.open(audio_file_path, 'wb') as wf:
     wf.setsampwidth(audio.get_sample_size(format))
     wf.setframerate(rate)
     wf.writeframes(b''.join(frames))
-######################### End Get Voice File #############################
+
 output = pipe(
     audio_file_path,
     chunk_length_s=30,
