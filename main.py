@@ -1,6 +1,5 @@
 import sys
 import os
-from contextlib import redirect_stdout
 
 import torch
 from transformers import pipeline
